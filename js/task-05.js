@@ -1,5 +1,5 @@
-const textInput = document.getElementById("name-input");
-const output = document.getElementById("name-output");
+const textInput = document.querySelector("#name-input");
+const output = document.querySelector("#name-output");
 
 
 textInput.addEventListener('input',OnInputHandler);
@@ -9,6 +9,6 @@ function OnInputHandler(event) {
         output.textContent = "Anonymous"
     } else {
         output.textContent = event.currentTarget.value;
-        console.dir(event.currentTarget)
+        
     }
 }

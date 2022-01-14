@@ -1,4 +1,4 @@
-const validationInputEl = document.getElementById("validation-input");
+const validationInputEl = document.querySelector("#validation-input");
 
 validationInputEl.addEventListener("blur", OnInputBlurHandler);
 
@@ -10,6 +10,5 @@ function OnInputBlurHandler(event) {
         validationInputEl.classList.add("invalid");
         validationInputEl.classList.remove("valid");
     }
-    console.dir(event.currentTarget.value.length);
-    console.dir(validationInputEl.dataset.length);
+   
 }

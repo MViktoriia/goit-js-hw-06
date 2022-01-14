@@ -1,5 +1,5 @@
-const fontSizeControlInputEl = document.getElementById("font-size-control");
-const spanTextEl = document.getElementById("text");
+const fontSizeControlInputEl = document.querySelector("#font-size-control");
+const spanTextEl = document.querySelector("#text");
 
 fontSizeControlInputEl.addEventListener("input", OnInputHandler);
 
