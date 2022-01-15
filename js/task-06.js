@@ -3,7 +3,9 @@ const validationInputEl = document.querySelector("#validation-input");
 validationInputEl.addEventListener("blur", OnInputBlurHandler);
 
 function OnInputBlurHandler(event) {
-    if (event.currentTarget.value.length == validationInputEl.dataset.length) {
+    console.log(typeof validationInputEl.dataset.length)
+    console.log(typeof event.currentTarget.value.length)
+    if (event.currentTarget.value.length === Number(validationInputEl.dataset.length)) {
         validationInputEl.classList.remove("invalid");
         validationInputEl.classList.add("valid");
     } else {

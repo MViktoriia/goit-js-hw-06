@@ -19,3 +19,4 @@ const galleryItemsRef = images.map((image) => `<li class = "gallery-item"><img c
 console.log(galleryItemsRef);
 
 galleryListRef.insertAdjacentHTML("afterbegin", galleryItemsRef);
+
