@@ -31,6 +31,7 @@ function createBoxes(amount) {
 }
 function destroyBoxes(boxes) {
   boxesEl.innerHTML = "";
+  namberInputEl.value ='';
  
 }
 function getRandomHexColor() {
